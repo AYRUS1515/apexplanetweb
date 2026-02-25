@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Web App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>Interactive Web App</h1>
+</header>
+
+<div class="container">
+
+<!-- QUIZ SECTION -->
+<section class="card">
+<h2>Quick Quiz</h2>
+<p id="question">Question will appear here</p>
+
+<div id="answers"></div>
+
+<button onclick="nextQuestion()">Next Question</button>
+<p id="score"></p>
+</section>
+
+<!-- API SECTION -->
+<section class="card">
+<h2>Random Joke (API)</h2>
+<p id="joke">Click the button to load a joke</p>
+<button onclick="getJoke()">Get Joke</button>
+</section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
