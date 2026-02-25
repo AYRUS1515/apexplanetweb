@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Majestic Webpage</title>
+
+    <style>
+        /* Global Styling */
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1d2671, #c33764);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        /* Main Card */
+        .container {
+            background: linear-gradient(135deg, #ffecd2, #fcb69f);
+            color: #2c2c2c;
+            width: 80%;
+            max-width: 700px;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            animation: float 2s ease-in-out infinite;
+        }
+
+        /* Animation */
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 40px;
+            background: linear-gradient(90deg, #8e2de2, #4a00e0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        img {
+            width: 220px;
+            margin: 25px 0;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        a {
+            color: #4a00e0;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 14px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(90deg, #ff512f, #dd2476);
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.08);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>✨ Welcome to My Majestic Webpage ✨</h1>
+
+        <p>
+            This colorful and elegant webpage is created using 
+            <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.
+            Experience beauty with simplicity 🌈
+        </p>
+
+        <img src="image.webp" alt="Majestic Image">
+
+        <p>
+            Explore more on 
+            <a href="https://www.google.com" target="_blank">Google</a>
+        </p>
+
+        <button onclick="showMagic()">Feel the Magic ✨</button>
+
+        <footer>
+            © 2026 | Crafted with ❤️ and Creativity by SURYA S
+        </footer>
+    </div>
+
+    <script>
+        function showMagic() {
+            alert("✨ Welcome to the majestic world of Web Development Done by SURYA S! ✨");
+        }
+    </script>
+
+</body>
+</html>
