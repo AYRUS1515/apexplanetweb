@@ -1,0 +1,56 @@
+// FORM VALIDATION
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+e.preventDefault();
+
+let name = document.getElementById("name").value.trim();
+let email = document.getElementById("email").value.trim();
+let terms = document.getElementById("terms").checked;
+let message = document.getElementById("formMessage");
+
+let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+if (name === "") {
+message.textContent = "Name is required";
+message.style.color = "red";
+return;
+}
+
+if (!email.match(emailPattern)) {
+message.textContent = "Enter a valid email";
+message.style.color = "red";
+return;
+}
+
+if (!terms) {
+message.textContent = "Accept terms first";
+message.style.color = "red";
+return;
+}
+
+message.textContent = "Form submitted successfully!";
+message.style.color = "green";
+
+});
+
+// TODO LIST
+function addTask() {
+let taskInput = document.getElementById("taskInput");
+let taskText = taskInput.value.trim();
+
+if (taskText === "") return;
+
+let li = document.createElement("li");
+li.textContent = taskText;
+
+let deleteBtn = document.createElement("button");
+deleteBtn.textContent = "Delete";
+
+deleteBtn.onclick = function() {
+li.remove();
+};
+
+li.appendChild(deleteBtn);
+document.getElementById("taskList").appendChild(li);
+
+taskInput.value = "";
+}
