@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Mini Project</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Student Contact & Task Manager</h1>
+    <nav>
+        <a href="#form">Contact Form</a>
+        <a href="#todo">To-Do List</a>
+    </nav>
+</header>
+
+<div class="container">
+
+<!-- CONTACT FORM -->
+<section id="form">
+<h2>Contact Form</h2>
+
+<form id="contactForm">
+
+<label>Full Name</label>
+<input type="text" id="name" placeholder="Enter your name">
+
+<label>Email</label>
+<input type="email" id="email" placeholder="Enter your email">
+
+<label>Phone</label>
+<input type="tel" id="phone" placeholder="Enter phone number">
+
+<label>Date of Birth</label>
+<input type="date" id="dob">
+
+<label>Gender</label>
+<div class="radio-group">
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female"> Female
+<input type="radio" name="gender" value="Other"> Other
+</div>
+
+<label>Interested In</label>
+<div class="checkbox-group">
+<input type="checkbox"> Web Development
+<input type="checkbox"> AI / ML
+<input type="checkbox"> Cyber Security
+</div>
+
+<label>Country</label>
+<select id="country">
+<option value="">Select Country</option>
+<option>India</option>
+<option>USA</option>
+<option>UK</option>
+</select>
+
+<label>Experience Level</label>
+<div class="radio-group">
+<input type="radio" name="exp"> Beginner
+<input type="radio" name="exp"> Intermediate
+<input type="radio" name="exp"> Advanced
+</div>
+
+<label>Message</label>
+<textarea id="message"></textarea>
+
+<label>
+<input type="checkbox" id="terms"> I agree to terms
+</label>
+
+<button type="submit">Submit</button>
+
+<p id="formMessage"></p>
+
+</form>
+</section>
+
+<!-- TODO LIST -->
+<section id="todo">
+<h2>Dynamic To-Do List</h2>
+
+<div class="todo-box">
+<input type="text" id="taskInput" placeholder="Enter task">
+<button onclick="addTask()">Add</button>
+</div>
+
+<ul id="taskList"></ul>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
