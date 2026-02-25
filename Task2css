@@ -1,0 +1,85 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+background: #f4f6f8;
+}
+
+header {
+background: #2c3e50;
+color: white;
+padding: 15px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+nav a {
+color: white;
+margin-left: 15px;
+text-decoration: none;
+}
+
+.container {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+padding: 20px;
+}
+
+section {
+background: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+input, select, textarea {
+width: 100%;
+padding: 8px;
+margin: 8px 0;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+button {
+background: #3498db;
+color: white;
+border: none;
+padding: 10px;
+cursor: pointer;
+border-radius: 5px;
+}
+
+button:hover {
+background: #2980b9;
+}
+
+.radio-group,
+.checkbox-group {
+margin: 10px 0;
+}
+
+.todo-box {
+display: flex;
+gap: 10px;
+}
+
+#taskList li {
+margin-top: 10px;
+background: #ecf0f1;
+padding: 8px;
+display: flex;
+justify-content: space-between;
+border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+.container {
+grid-template-columns: 1fr;
+}
+
+header {
+flex-direction: column;
+}
+}
