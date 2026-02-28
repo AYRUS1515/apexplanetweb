@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Surya S | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar glass">
+        <h2 class="logo">Surya S</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero glass">
+        <h1>Hello, I'm Surya 👋</h1>
+        <p>Frontend Developer | HTML | CSS | JavaScript</p>
+        <button id="viewProjects" class="btn">View Projects</button>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="glass">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate Frontend Developer currently building responsive
+            and interactive web applications. I enjoy creating modern UI designs
+            and improving user experience.
+        </p>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="glass">
+        <h2>My Projects</h2>
+
+        <div class="card glass">
+            <h3>📝 To-Do App</h3>
+            <p>Task management application with Local Storage support.</p>
+            <a href="todo.html">
+                <button class="btn">Open Project</button>
+            </a>
+        </div>
+
+        <div class="card glass">
+            <h3>🛍 Product Listing Page</h3>
+            <p>Dynamic filtering and sorting of products.</p>
+            <a href="products.html">
+                <button class="btn">Open Project</button>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="glass">
+        <h2>Contact Me</h2>
+
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- ===== JS ===== -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
