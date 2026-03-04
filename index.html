@@ -1,83 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Surya S | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeonCart | Future Store</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- ===== NAVBAR ===== -->
-    <header class="navbar glass">
-        <h2 class="logo">Surya S</h2>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+<div id="loader">⚡ Loading NeonCart...</div>
 
-    <!-- ===== HERO SECTION ===== -->
-    <section id="home" class="hero glass">
-        <h1>Hello, I'm Surya 👋</h1>
-        <p>Frontend Developer | HTML | CSS | JavaScript</p>
-        <button id="viewProjects" class="btn">View Projects</button>
-    </section>
+<header class="navbar">
+<h2 class="logo">⚡ NeonCart</h2>
+<nav>
+<a href="#">Home</a>
+<a href="#products">Products</a>
+<a href="#" id="cartBtn">Cart (<span id="cartCount">0</span>)</a>
+<a href="login.html" id="authLink">Login</a>
+</nav>
+</header>
 
-    <!-- ===== ABOUT SECTION ===== -->
-    <section id="about" class="glass">
-        <h2>About Me</h2>
-        <p>
-            I am a passionate Frontend Developer currently building responsive
-            and interactive web applications. I enjoy creating modern UI designs
-            and improving user experience.
-        </p>
-    </section>
+<section class="hero">
+<h1>Future Shopping Experience</h1>
+<p>Neon Multi-Color Glowing Store</p>
+</section>
 
-    <!-- ===== PROJECTS SECTION ===== -->
-    <section id="projects" class="glass">
-        <h2>My Projects</h2>
+<section class="filters">
+<input type="text" id="searchInput" placeholder="Search...">
+<select id="categoryFilter">
+<option value="all">All</option>
+<option value="tech">Tech</option>
+<option value="fashion">Fashion</option>
+</select>
+</section>
 
-        <div class="card glass">
-            <h3>📝 To-Do App</h3>
-            <p>Task management application with Local Storage support.</p>
-            <a href="todo.html">
-                <button class="btn">Open Project</button>
-            </a>
-        </div>
+<section id="products" class="product-grid"></section>
 
-        <div class="card glass">
-            <h3>🛍 Product Listing Page</h3>
-            <p>Dynamic filtering and sorting of products.</p>
-            <a href="products.html">
-                <button class="btn">Open Project</button>
-            </a>
-        </div>
+<div id="cartSidebar" class="sidebar">
+<h3>Your Cart</h3>
+<div id="cartItems"></div>
+<h4>Total: ₹<span id="totalPrice">0</span></h4>
+<button onclick="goCheckout()">Checkout</button>
+</div>
 
-    </section>
+<div id="toast" class="toast">Added to Cart</div>
+<button id="topBtn">↑</button>
 
-    <!-- ===== CONTACT SECTION ===== -->
-    <section id="contact" class="glass">
-        <h2>Contact Me</h2>
-
-        <form id="contactForm">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea rows="4" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </section>
-
-    <!-- ===== JS ===== -->
-    <script src="js/main.js"></script>
-
+<script src="main.js"></script>
 </body>
 </html>

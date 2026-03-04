@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout | NeonCart</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero">
+<h1>Checkout</h1>
+</section>
+
+<div class="card center">
+<h3>Order Summary</h3>
+<div id="orderItems"></div>
+<h4>Total: ₹<span id="orderTotal">0</span></h4>
+
+<h3>Payment</h3>
+<input type="text" placeholder="Card Number">
+<input type="text" placeholder="Expiry">
+<input type="text" placeholder="CVV">
+<button onclick="placeOrder()">Pay Now</button>
+
+<p id="orderMsg"></p>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
